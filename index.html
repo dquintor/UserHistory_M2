@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio</title>
+    <title>Portfolio</title>
 
-        <meta name= "description" content="Personal portfolio in HTML5 and CSS with presentation, projects, and contacts sections, linked to a secondary page about pets with images and descriptions.">
-        <meta name= "author" content="Daniela Quinto Rios">
-        <meta name="robots" content="index, follow">
+    <meta name="description" content="Personal portfolio in HTML5 and CSS with presentation, projects, and contacts sections, linked to a secondary page about pets with images and descriptions.">
+    <meta name="author" content="Daniela Quinto Rios">
+    <meta name="robots" content="index, follow">
 
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Daniela Quinto Rios</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="pets.html">Pets</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="about">
-            <h2>About me</h2>
-            <p>I am a computer engineering student interested in web development and building clean,functional interfaces using HTML and CSS</p>
-        </section>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <section id="projects">
-            <h2>Projects</h2>
+<body>
+
+    <header>
+        <h1>Daniela Quinto Rios</h1>
+        <nav>
             <ul>
-                <li>
-                    <strong>Inventory in Python</strong><br>
-                    <a href="https://github.com/dquintor/Historia-de-usuario-M1S1.git" target="_blank">Github Repository</a>
-                </li>
-                <li>
-                    <strong>
-                        PeopleOps - Vacations Management (Python)
-                    </strong><br>
-                    <a href="https://github.com/dquintor/PeopleOps-Vacation-Console-Vacation-Management-in-Python.git" target="_blank">
-                        Github Repository
-                    </a>
-                </li>
-                <li>
-                    <strong>
-                        HTML Media Panel – Birds Panel
-                    </strong><br>
-                    <a href="https://github.com/dquintor/HTML-MediaPanel.git" target="_blank">
-                        Github Repository
-                    </a>
-                </li>
-                <li>
-                    <strong>
-                        Mini OS – Desktop in a Single Page
-                    </strong><br>
-                    <a href="https://github.com/dquintor/mini_OS.git">Github Repository</a>
-                </li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="pets.html">Pets</a></li>
             </ul>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:dany.quintorios@gmail.com">dany.quintorios@gmail.com</a></p>
-            <p>Phone:<a href="telf:+573052077365">+57 305 207 7365</a></p>
-            
-            <form>
-                <label>
-                    Message:
-                    <input type="text" name="message">
-                </label>
-                <button type="submit">Send</button></button>
-            </form>
-        </section>
-    
-    </body>
-    
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About me</h2>
+        <p>
+            I am a computer engineering student interested in web development and building clean,
+            functional interfaces using HTML and CSS.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <ul>
+            <li>
+                <strong>Inventory in Python</strong><br>
+                <a href="https://github.com/dquintor/Historia-de-usuario-M1S1.git" target="_blank">
+                    GitHub Repository
+                </a>
+            </li>
+
+            <li>
+                <strong>PeopleOps - Vacations Management (Python)</strong><br>
+                <a href="https://github.com/dquintor/PeopleOps-Vacation-Console-Vacation-Management-in-Python.git" target="_blank">
+                    GitHub Repository
+                </a>
+            </li>
+
+            <li>
+                <strong>HTML Media Panel – Birds Panel</strong><br>
+                <a href="https://github.com/dquintor/HTML-MediaPanel.git" target="_blank">
+                    GitHub Repository
+                </a>
+            </li>
+
+            <li>
+                <strong>Mini OS – Desktop in a Single Page</strong><br>
+                <a href="https://github.com/dquintor/mini_OS.git" target="_blank">
+                    GitHub Repository
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:dany.quintorios@gmail.com">dany.quintorios@gmail.com</a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+573052077365">+57 305 207 7365</a>
+        </p>
+
+        <!-- Simple form as required in the User History week 1 -->
+        <form>
+            <label>
+                Message:
+                <input type="text" name="message">
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
 </html>
