@@ -1,190 +1,255 @@
-/* =========================
+/* ========================= 
    Color palette variables
    ========================= */
-:root {
-  --powder-petal: #e8d1c5ff;
-  --powder-petal-2: #eddcd2ff;
-  --linen: #fff1e6ff;
-  --parchment: #f0efebff;
-  --powder-petal-3: #eeddd3ff;
-  --parchment-2: #edede8ff;
-  --text-dark: #3a3a3a;
+:root{
+  --powder-petal:#e8d1c5ff;
+  --powder-petal-2:#eddcd2ff;
+  --linen:#fff1e6ff;
+  --parchment:#f0efebff;
+  --powder-petal-3:#eeddd3ff;
+  --parchment-2:#edede8ff;
+  --text-dark:#3a3a3a;
+
+  /* Typography variables */
+  --font-family-base:'Arial',sans-serif;
+  --font-size-base:1rem;
+  --line-height-base:1.6;
+}
+
+html{
+  font-size:100%; /* 1rem = 16px (user controlled) */
 }
 
 /* =========================
    Global reset & box model
    ========================= */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 /* =========================
    Base page styles
    ========================= */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: var(--linen);
-  color: var(--text-dark);
+body{
+  font-family:var(--font-family-base);
+  background-color:var(--linen);
+  color:var(--text-dark);
+  font-size:var(--font-size-base);
+  line-height:var(--line-height-base);
 }
 
 /* =========================
    Header & navigation
    ========================= */
-header {
-  background-color: var(--powder-petal);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header{
+  background-color:var(--powder-petal);
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:1rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 0;
-  padding: 0;
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:space-evenly;
+  gap:20px;
+  margin-top:0;
+  padding:0;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--text-dark);
-  font-weight: bold;
+nav a{
+  text-decoration:none;
+  color:var(--text-dark);
+  font-weight:bold;
+  font-size:1rem;
 }
 
-nav a:hover {
-  color: #8a6f64;
+nav a:hover{
+  color:#8a6f64;
 }
 
 /* =========================
    Section layout
    ========================= */
-section {
-  background-color: var(--parchment);
-  margin: 30px auto;
-  padding: 20px;
-  max-width: 800px;
-  border-radius: 12px;
+section{
+  background-color:var(--parchment);
+  margin:30px auto;
+  padding:20px;
+  max-width:800px;
+  border-radius:12px;
 }
 
-section h2 {
-  margin-bottom: 10px;
+section h2{
+  margin-bottom:10px;
+  font-size:1.5rem;
 }
 
 /* =========================
    Lists inside sections
    ========================= */
-section ul {
-  margin-left: 20px;
+section ul{
+  margin-left:20px;
 }
 
-section ul li {
-  margin-bottom: 8px;
-}
-
-section ul a {
-  color: #6b4f4f;
-}
-
-section ul a:hover {
-  color: #b08968;
+section ul li{
+  margin-bottom:8px;
+  font-size:1rem;
 }
 
 /* =========================
-   Articles (pets cards)
+   Shared link styling (sections/projects/contact)
    ========================= */
-article {
-  background-color: var(--parchment-2);
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 12px;
+section ul a,
+#contact a,
+#projects a{
+  color:#6b4f4f;
 }
 
-article img {
-  width: 100%;
-  max-width: 300px;
-  display: block;
-  margin: 0 auto 10px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+section ul a:hover,
+#contact a:hover,
+#projects a:hover{
+  color:#b08968;
+}
+
+#projects a{
+  font-weight:bold;
+}
+
+/* =========================
+   Cards (pets articles + project items)
+   ========================= */
+article,
+#projects li{
+  background-color:var(--parchment-2);
+  padding:15px;
+  border-radius:12px;
+}
+
+article{
+  margin-bottom:20px;
+  font-size:1rem;
+}
+
+#projects li{
+  margin-bottom:15px;
+}
+
+/* =========================
+   Article images (pets cards)
+   ========================= */
+article img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto 10px;
+  border-radius:16px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
 }
 
 /* =========================
    Contact section
    ========================= */
-#contact p {
-  margin-bottom: 8px; /* fixed invalid margin property */
-}
-
-#contact a {
-  color: #6b4f4f;
-}
-
-#contact a:hover {
-  color: #b08968;
+#contact p{
+  margin-bottom:8px;
+  font-size:0.95rem;
 }
 
 /* =========================
    Back to portfolio link
    ========================= */
-a[href="index.html"] {
-  display: block;
-  text-align: center;
-  margin: 40px 0;
-  font-weight: bold;
+a[href="index.html"]{
+  display:block;
+  text-align:center;
+  margin:40px 0;
+  font-weight:bold;
+  font-size:1rem;
 }
 
 /* =========================
    Projects section styling
    ========================= */
-#projects ul {
-  list-style: none;
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 20px;
+#projects ul{
+  list-style:none;
+  padding-left:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
-
-#projects li {
-  background-color: var(--parchment-2);
-  margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 12px;
-}
-
-#projects a {
-  color: #6b4f4f;
-  font-weight: bold;
-}
-
-#projects a:hover {
-  color: #b08968;
-}
-
 
 /* =========================
    Pets Gallery Layout
    ========================= */
-.pets-container {
-    display: flex;
-    flex-wrap: wrap;              /* Flexbox: wrap items to next row */
-    justify-content: space-between; /* Optional: space out cards */
-    gap: 20px;                    /* Space between items */
+.pets-container{
+  display:flex;
+  flex-wrap:wrap;                 /* Flexbox: wrap items to next row */
+  justify-content:space-between;  /* Optional: space out cards */
+  gap:20px;                       /* Space between items */
 }
 
-.pets-container article {
-    flex: 1 1 250px;              /* Grow/shrink, base width 250px */
-    max-width: 300px;             /* Optional: cap the width */
+.pets-container.flex-mode img{
+  width:calc(33.333% - 20px);
+}
+
+.pets-container article{
+  flex:1 1 250px;                 /* Grow/shrink, base width 250px */
+  max-width:300px;                /* Optional: cap the width */
+}
+
+@media screen and (max-width:900px){
+  .pets-container article img{
+    max-width:none;
+  }
 }
 
 /* Optional: grid variant for experimentation */
-@media screen and (min-width: 900px) {
-    .pets-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
+@media screen and (min-width:900px){
+  .pets-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+  }
+}
+
+@media screen and (max-width:600px){
+  nav ul{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  #projects ul{
+    grid-template-columns:1fr;
+  }
+
+  /* Make gallery actually become 2-column grid */
+  .pets-container{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+  }
+
+  /* These flex sizing rules can fight grid sizing; disable them in grid mode */
+  .pets-container article{
+    max-width:none;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width:900px){
+  #projects ul{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  /* Make gallery 3-column grid on tablets */
+  .pets-container{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
+  }
+
+  .pets-container article{
+    max-width:none;
+  }
 }
