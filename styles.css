@@ -43,3 +43,68 @@ nav a {
 nav a:hover{
     color: #8a6f64;
 }
+
+section {
+    background-color: var(--parchment);
+    margin:30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+
+section h2{
+    margin-bottom: 10px;
+}
+
+section ul{
+    margin-left: 20px;
+}
+
+section ul li{
+    margin-bottom: 8px;
+}
+
+section ul a{
+    color: #6b4f4f;
+}
+
+section ul a:hover{
+    color: #b08968;
+}
+
+article{
+    background-color: var(--parchment-2);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+article img{
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#contact p{
+    margin: bottom 8px;
+}
+
+#contact a{
+    color: #6b4f4f
+}
+
+#contact a:hover{
+    color: #b08968
+}
+
+
+a[href="index.html"]{
+    display: block;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: bold;
+}
