@@ -108,3 +108,24 @@ a[href="index.html"]{
     margin: 40px 0;
     font-weight: bold;
 }
+
+#projects ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#projects li {
+    background-color: var(--parchment-2);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#projects a{
+    color: #6b4f4f;
+    font-weight: bold;
+}
+
+#projects a:hover {
+    color: #b08968;
+}
